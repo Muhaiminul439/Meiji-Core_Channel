@@ -18,7 +18,6 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.meiji.sp')
-
 Mobile.delay(3)
 
 for (int i = 1; i <= 30; i++) 
