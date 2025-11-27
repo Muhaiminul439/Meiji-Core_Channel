@@ -44,6 +44,7 @@ for(int i=0; i<10; i++)
 }
 Mobile.tap(findTestObject('Object Repository/Study Metarial/android.widget.TextView - (7)'), 0)
 
+Mobile.delay(3)
 
 Mobile.tap(findTestObject('Object Repository/Study Metarial/android.widget.TextView - (3)'), 0)
 Mobile.tap(findTestObject('Object Repository/Study Metarial/android.widget.TextView - 1'), 0)
