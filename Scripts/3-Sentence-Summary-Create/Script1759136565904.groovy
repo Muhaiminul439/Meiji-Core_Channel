@@ -18,8 +18,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.meiji.sp')
+Mobile.delay(3)
 
-for (int i = 1; i <=30;i++){
+for (int i = 1; i <=30;i++)
+	{
 
     Mobile.tap(findTestObject('Object Repository/3-sentence summary/com.horcrux.svg.CircleView'), 0)
     Mobile.tap(findTestObject('Object Repository/3-sentence summary/android.widget.TextView -'), 0)

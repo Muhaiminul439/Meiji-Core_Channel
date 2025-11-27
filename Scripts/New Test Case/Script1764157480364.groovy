@@ -17,25 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.meiji.sp')
-Mobile.delay(3)
+Mobile.startApplication('C:\\Users\\User\\Downloads\\application-26474f6d-173b-4aa2-b7ae-a23192a3c363.apk', true)
 
-for (int i = 1; i <= 30; i++) 
-	{ 
-    
-    Mobile.tap(findTestObject('Object Repository/60-sec video/com.horcrux.svg.PathView'), 0)
-    Mobile.tap(findTestObject('Object Repository/60-sec video/android.widget.TextView -'), 0)
-    Mobile.tap(findTestObject('Object Repository/60-sec video/android.view.ViewGroup'), 0)
-    Mobile.tap(findTestObject('Object Repository/60-sec video/android.widget.TextView - (1)'), 0)
-    Mobile.tap(findTestObject('Object Repository/60-sec video/android.view.ViewGroup (1)'), 0)
-    Mobile.tap(findTestObject('Object Repository/60-sec video/android.view.View (1)'), 0)
-    
-    Mobile.delay(5) 
-    Mobile.sendKeys(findTestObject('Object Repository/60-sec video/android.widget.EditText -'), 'Video-' + i)
-    
-    Mobile.tap(findTestObject('Object Repository/60-sec video/android.widget.TextView - (2)'), 0)
-    
-    Mobile.delay(3) 
-}
 
+
+Mobile.closeApplication()
 
